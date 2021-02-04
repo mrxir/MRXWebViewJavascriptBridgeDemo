@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Xr-gH-8V8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WKWebView-->
+        <scene sceneID="gjc-uW-Mqe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iS3-KL-ZgQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="WKWebView" id="3h6-Ag-0fL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GvS-xG-bNm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nFR-ir-0MR" kind="relationship" relationship="rootViewController" id="wZF-xT-Gqq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPY-Ie-XyV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="1130"/>
+        </scene>
+        <!--WKWebView-->
+        <scene sceneID="Jpb-0z-tNc">
+            <objects>
+                <viewController id="nFR-ir-0MR" customClass="DemoWKWebViewController" sceneMemberID="viewController">
+                    <wkWebView key="view" contentMode="scaleToFill" id="y5L-y2-8Nv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <wkWebViewConfiguration key="configuration">
+                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                            <wkPreferences key="preferences"/>
+                        </wkWebViewConfiguration>
+                    </wkWebView>
+                    <navigationItem key="navigationItem" title="WKWebView" id="KiB-iJ-4Gy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OV5-J1-IH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="1129"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="w9S-7e-pvw">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Xr-gH-8V8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0H-vQ-2oF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tkN-Or-kLJ" kind="relationship" relationship="viewControllers" id="QQ0-RX-ld1"/>
+                        <segue destination="iS3-KL-ZgQ" kind="relationship" relationship="viewControllers" id="gYr-1h-ZLU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3V3-Hx-ebo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="603"/>
+        </scene>
+        <!--UIWebView-->
+        <scene sceneID="cbD-NQ-qHb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tkN-Or-kLJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UIWebView" id="kKc-cq-qgL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rvi-bQ-hV4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5SX-Yo-6C7" kind="relationship" relationship="rootViewController" id="UMv-8E-ao5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTB-U0-yWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="124"/>
+        </scene>
+        <!--UIWebView-->
+        <scene sceneID="Hxn-SV-rTw">
+            <objects>
+                <viewController id="5SX-Yo-6C7" customClass="DemoUIWebViewController" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="zRZ-Je-1or">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <navigationItem key="navigationItem" title="UIWebView" id="3kw-ea-sIj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9np-UG-ut5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1896" y="124"/>
+        </scene>
+    </scenes>
+</document>

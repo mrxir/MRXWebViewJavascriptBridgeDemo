@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MRXWebViewJavascriptBridgeDemo_MRXWebViewJavascriptBridgeDemoUITests : NSObject
+@end
+@implementation PodsDummy_Pods_MRXWebViewJavascriptBridgeDemo_MRXWebViewJavascriptBridgeDemoUITests
+@end
